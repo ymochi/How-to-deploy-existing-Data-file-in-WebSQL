@@ -1,13 +1,19 @@
-# How to apply Prepopulated database in cross platform (hybrid) applications-- Cordova (and IONIC, Phonegap) with Visual Studio 2015
-When developing a cross platform (Android, IOS) application, we often need to have a relatively large prepopulated database. However, it  is almost impossible to make prepopulated DB in WebSQL (If we insert data in WebSQL, we cannot deploy it).
+# How-to-deploy-existing-Data-file-in-WebSQL (Hybrid, Cross platform application, Phonegap, Angular/IONIC, Visual Studio)
+WebSQL is quite useful for managing data. However, WebSQL does not make DB files in WWW/folder, so we cannot deploy existing data.
+(Even if we already have a complete data file on our PC, we cannot package it)   
+
 <p>
-Here is one answer to create prepolulated DB in hybrid application (SQlite ver).
+Here is one answer to deploy existing data in hybrid application (WebSQL ver) without using DB server.
 </p>
 <p>
-You need two plugins.<br><b>
-1) Cordova-sqlite-evcore-extbuild-free<br>
-2) cordova-plugin-dbcopy<br></b>
-->Apply these two plugins in Visual Studio (please open config.xml and you can easily add these plugins)<br>
+
+You need the followings.<br><b>
+1) json files under WWW/folder<br>
+2) add $http in your controller <br>e.g.,like this->.controller('LicenseCtrl', function ($scope,XXX, XXX, $http, $state) {<br></b>
+->we can get local files by using "$http.get('assets/AAA.json')" <br>
+*"assets" is a sample name. you can change the name as you wish. However, the folder should be located under WWW/folder
+
+At first 
 
 And you need to make prepopulated DB by using "DB Browser for SQLite"<br>
 ->http://sqlitebrowser.org/<br>
