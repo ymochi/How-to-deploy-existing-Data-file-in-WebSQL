@@ -3,9 +3,9 @@ When developing a cross platform (Android, IOS) application, we often need to ha
 
 Here is one answer to create prepolulated DB in hybrid application (SQlite ver).
 
-You need two plugins.
+You need two plugins.<b>
 1) Cordova-sqlite-evcore-extbuild-free
-2) cordova-plugin-dbcopy
+2) cordova-plugin-dbcopy</b>
 ->Apply these two plugins in Visual Studio (please open config.xml and you can easily add these plugins)
 
 And you need to make prepopulated DB by using "DB Browser for SQLite"
@@ -18,7 +18,7 @@ Since we have to debug our project on Visual Studio (e.g., ripple our projects),
 (WebSQL and SQlite are quite similar, so I strongly recommend use both methods in your hybrid (cross platform application)).
 
 In the source codes, there are two simple steps.
-1) Check environmemt
-2) dbcopy();
+<b>1) Check environmemt
+ 2) dbcopy();</b>
 *After copying db file, you can use SQLs in normal way. 
 
