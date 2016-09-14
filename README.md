@@ -7,25 +7,16 @@ Here is one answer to deploy existing data in hybrid application (WebSQL ver) wi
 </p>
 <p>
 
-You need the followings.<br><b>
-1) json files under WWW/folder<br>
-2) add $http in your controller <br>e.g.,like this->.controller('LicenseCtrl', function ($scope,XXX, XXX, $http, $state) {<br></b>
+You need only two steps.<br><b>
+1) Add json files under WWW/folder<br>
+2) Add $http in your controller <br>e.g.,like this->.controller('LicenseCtrl', function ($scope,XXX, XXX, $http, $state) {<br></b>
 ->we can get local files by using "$http.get('assets/AAA.json')" <br>
 *"assets" is a sample name. you can change the name as you wish. However, the folder should be located under WWW/folder
 
-At first 
+At first you have to change your data into json files.
+Many people are familiar with Excel and making spreadsheets, so it is easy to convert excel file to json.
+->This site offers a easy macro (http://stabucky.com/wp/archives/7658)
+*Be careful when your data has "<b>quotation marks</b>" because JSON file also uses quotation marks for delimiter.
 
-And you need to make prepopulated DB by using "DB Browser for SQLite"<br>
-->http://sqlitebrowser.org/<br>
-(you'll get db file such as "words.db")<br>
-->This db file is located on www/ folder<br>
-
-Since we have to debug our project on Visual Studio (e.g., ripple our projects), WebSQL is also necesarry to confirm the implemented functions on Visual Studio. So please remain WebSQL functions if you already created!<br>
-->You can check your functions by using WebSQL (Visual Studio, ripple). After completing debugs, you'll check the functions on your actual device(iPhone or Android).  <br>
-(WebSQL and SQlite are quite similar, so I strongly recommend use both methods in your hybrid (cross platform application)).<br>
-
-In the source codes, there are two simple steps.<br>
-<b>1) Check environmemt<br>
- 2) dbcopy();</b><br>
-*After copying db file, you can use SQLs in normal way. <br>
+Second, you access your local files via $http.get
 
