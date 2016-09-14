@@ -11,12 +11,12 @@ You need only two steps.<br><b>
 1) Add json files under WWW/folder<br>
 2) Add $http in your controller <br>e.g.,like this->.controller('LicenseCtrl', function ($scope,XXX, XXX, $http, $state) {<br></b>
 ->we can get local files by using "$http.get('assets/AAA.json')" <br>
-*"assets" is a sample name. you can change the name as you wish. However, the folder should be located under WWW/folder
+*"assets" is a sample name. you can change the name as you wish. However, the folder should be located under WWW/folder <br>
+ <br>
+At first you have to change your data into json files. <br>
+Many people are familiar with Excel and making spreadsheets, so it is easy to convert excel file to json. <br>
+->This site offers a easy macro (http://stabucky.com/wp/archives/7658) <br>
+*Be careful when your data has "<b>quotation marks</b>" because JSON file also uses quotation marks for delimiter. <br>
 
-At first you have to change your data into json files.
-Many people are familiar with Excel and making spreadsheets, so it is easy to convert excel file to json.
-->This site offers a easy macro (http://stabucky.com/wp/archives/7658)
-*Be careful when your data has "<b>quotation marks</b>" because JSON file also uses quotation marks for delimiter.
-
-Second, you access your local files via $http.get
+Second, you access your local files via $http.get <br>
 
