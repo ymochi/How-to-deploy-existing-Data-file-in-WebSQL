@@ -10,9 +10,26 @@ Here is one answer to deploy existing data in hybrid application (WebSQL ver) wi
 
 You need only two steps.<br><b>
 1) Add json files under WWW/folder<br>
-2) Add $http in your controller <br>e.g.,like this->.controller('LicenseCtrl', function ($scope,XXX, XXX, $http, $state) {<br></b>
+2) Add $http in your controller <br>e.g.,like this->.controller('MyCtrl', function ($scope,XXX, XXX, $http, $state) {<br></b>
 ->we can get local files by using "$http.get('assets/AAA.json')" <br>
 *"assets" is a sample name. you can change the name as you wish. However, the folder should be located under WWW/folder <br>
+ 
+ ```js
+ $http.get('assets/XXX.json').success(function (data) { 
+      obj = angular.fromJson(data); 
+      // DBOpen(WebSQL) 
+      db = openDatabase("words.db", "1.0", "words", 1024 * 1024 * 10); 
+ 
+ 
+      //XXX.json is taken from assets/ folder 
+      for (var i = 0; i < obj.length; i++) { 
+           addItem(i, 1);  //you can add your code here. 
+        } 
+      });
+ ```
+ 
+ 
+ 
  <br>
 At first you have to change your data into json files. <br>
 Many people are familiar with Excel and making spreadsheets, so it is easy to convert excel file to json. <br>
