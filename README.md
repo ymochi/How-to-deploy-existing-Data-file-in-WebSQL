@@ -1,6 +1,7 @@
 # How-to-deploy-existing-Data-file-in-WebSQL (Hybrid, Cross platform application, Phonegap, Angular/IONIC, Visual Studio)
 WebSQL is quite useful for managing data. However, WebSQL does not make DB files in WWW/folder, so we cannot deploy existing data.
-(Even if we already have a complete data file on our PC, we cannot package it)   
+(Even if we already have a complete data file on our PC, we cannot package it)
+*We can retrieve data from other DB servers, but we often need data from local files)
 
 <p>
 Here is one answer to deploy existing data in hybrid application (WebSQL ver) without using DB server.
