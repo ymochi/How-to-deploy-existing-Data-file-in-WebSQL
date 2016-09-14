@@ -30,5 +30,5 @@ This method has one big defect.<br>
 Since $http.get reads local files and SQL inserts data one by one, it takes time to deploy all data.<br>
 It depends on the data size, but you had better add a progress bar when you'll apply your data.<br>
 (if you need to deploy large data (e.g., over 3000 records), you had better use sqlite)<br>
-->see 
+->see https://github.com/ymochi/prepopulated-DB-for-hybrid-applications
 
