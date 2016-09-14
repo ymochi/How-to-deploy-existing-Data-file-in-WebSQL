@@ -17,6 +17,11 @@ At first you have to change your data into json files. <br>
 Many people are familiar with Excel and making spreadsheets, so it is easy to convert excel file to json. <br>
 ->This site offers a easy macro (http://stabucky.com/wp/archives/7658) <br>
 *Be careful when your data has "<b>quotation marks</b>" because JSON file also uses quotation marks for delimiter. <br>
+e.g., <br>
+[{"word":"absolute","word_family":"absolutely(ad)"} <br>
+,{"word":"absorb","word_family":"be absorbed in<br>She was absorbed in the musical."}<br>
+,{"word":"proclaim","word_family":"announce"}<br>
+]<br>
 
 Second, you access your local files via $http.get <br>
 
