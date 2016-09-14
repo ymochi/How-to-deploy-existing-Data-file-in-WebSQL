@@ -25,7 +25,7 @@ e.g., <br>
 
 Second, you access your local files via $http.get <br>
 
-<b>important</b><br>
+#<b>important</b><br>
 This method has one big defect.<br>
 Since $http.get reads local files and SQL inserts data one by one, it takes time to deploy all data.<br>
 It depends on the data size, but you had better add a progress bar when you'll apply your data.<br>
