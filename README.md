@@ -4,7 +4,7 @@ WebSQL is quite useful for managing data. However, WebSQL does not make DB files
 *We can retrieve data from other DB servers, but we often need data from local files)
 
 <p>
-Here is one answer to deploy existing data in hybrid application (WebSQL ver) without using DB server.
+Here is one solution to deploy existing data in hybrid application (WebSQL ver) without using DB server.
 </p>
 <p>
 
